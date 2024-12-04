@@ -4,6 +4,7 @@ import { SelectedTile } from 'src/app/map/model/SelectedTile';
 import { Settings } from 'src/app/map/model/Settings';
 import { EventService } from 'src/app/map/service/event.service';
 import { SettingsService } from 'src/app/map/service/settings.service';
+import { OreSettings } from 'src/app/map/model/OreValues';
 
 @Component({
   selector: 'dumap-map-settings',
@@ -14,6 +15,7 @@ export class MapSettingsComponent implements OnInit {
   faCog = faCog;
 
   settings: Settings;
+  oreSettings: OreSettings[];
   selectedTile: SelectedTile;
 
   constructor(
@@ -23,6 +25,7 @@ export class MapSettingsComponent implements OnInit {
 
   ngOnInit() {
     this.settings = this.settingsService.getSettings();
+    this.oreSettings = this.settingsService.OreSettings() || [];
     this.eventService.tileSelected.subscribe((selectedTile: SelectedTile) => {
       console.log('change');
       this.selectedTile = selectedTile;
@@ -71,6 +74,10 @@ export class MapSettingsComponent implements OnInit {
     } else if (tier === 5) {
       this.settingsService.setSettingsValue('showT5ResourceAmount', event.target.checked);
     }
+  }
+
+  oreQuantaChanged(index: number, event) {
+    this.settingsService.setOreQuanta(index, event.target.value);
   }
 
   changeMinOre(minOre: number) {

@@ -23,7 +23,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Settings } from './map/model/Settings';
 import { SettingsService } from './map/service/settings.service';
 import { ToastrComponentlessModule, ToastrService } from 'ngx-toastr';
-import { Configuration, OrderService } from '@tiramon/du-market-api';
+import { Configuration, OrderService } from '@xairo/du-market-api';
 
 @Component({
   selector: 'dumap-root',

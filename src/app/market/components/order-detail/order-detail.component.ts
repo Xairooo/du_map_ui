@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Order, OrderStats } from '@tiramon/du-market-api';
+import { Order, OrderStats } from '@xairo/du-market-api';
 import { inputItem } from '../../model/inputItem.model';
 
 import * as Highcharts from 'highcharts';

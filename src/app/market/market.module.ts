@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { ApiModule, Configuration } from '@tiramon/du-market-api';
+import { ApiModule, Configuration } from '@xairo/du-market-api';
 import { CommonModule } from '@angular/common';
 import { MarketRoutingModule } from './market-routing.module';
 import { TreeViewLevelComponent } from './components/tree-view-level/tree-view-level.component';

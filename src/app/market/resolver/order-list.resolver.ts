@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from "@angular/router";
-import { Order, OrderService } from "@tiramon/du-market-api";
+import { Order, OrderService } from "@xairo/du-market-api";
 import { Observable } from "rxjs";
 
 @Injectable({ providedIn: 'root' })

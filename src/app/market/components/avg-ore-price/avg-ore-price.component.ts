@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AvgOrePrice } from '@tiramon/du-market-api';
+import { AvgOrePrice } from '@xairo/du-market-api';
 
 import { inputItem } from '../../model/inputItem.model';
 import itemJson from '../../../../assets/market/items.json';

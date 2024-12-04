@@ -6,7 +6,7 @@ import itemJson from '../../../../assets/market/items.json';
 import groupJson from '../../../../assets/market/groups.json';
 import { inputGroup } from '../../model/inputGroup.model';
 import { inputItem } from '../../model/inputItem.model';
-import { OrderService } from '@tiramon/du-market-api';
+import { OrderService } from '@xairo/du-market-api';
 import { Router } from '@angular/router';
 import { ShareService } from '../../services/share.service';
 import { TreeViewComponent } from '../../components/tree-view/tree-view.component';

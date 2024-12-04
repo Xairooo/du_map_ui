@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
-import { AvgOrePrice, OrderService } from '@tiramon/du-market-api';
+import { AvgOrePrice, OrderService } from '@xairo/du-market-api';
 import { OAuthService } from 'angular-oauth2-oidc';
 import { Observable } from 'rxjs';
 

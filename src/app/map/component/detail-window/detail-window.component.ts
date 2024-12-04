@@ -1,9 +1,11 @@
-import { DatePipe } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
+import { DatePipe } from '@angular/common';
 import { faCopy } from '@fortawesome/free-solid-svg-icons';
 import { Face } from 'src/app/map/model/Face';
 import { Scan } from 'src/app/map/model/Scan';
 import { EventService } from 'src/app/map/service/event.service';
+import { SettingsService } from 'src/app/map/service/settings.service';
+import { OreSettings } from '../../model/OreValues';
 
 @Component({
   selector: 'dumap-detail-window',
@@ -21,10 +23,16 @@ export class DetailWindowComponent implements OnInit {
   demeter = new Date('2021-11-23T09:00:00');
   postFix = 'L/h';
 
+  public oreSettings: OreSettings[];
+
   constructor(
     private eventService: EventService,
-    @Inject('ORES') public oreNames: { name; tier; color; hc; quanta }[],
-  ) {}
+    private settingsService: SettingsService
+  ) {  }
+
+  public get oreNames(): { name; tier; color; hc; quanta }[] {
+    return this.settingsService.OreSettings();
+  }
 
   ngOnInit() {
     // changes the shown face and scan that was selected by a click on the map

@@ -19,11 +19,11 @@ import { environment } from 'src/environments/environment';
 import {
   ApiModule as MarketApiModule,
   Configuration as MarketConfiguration,
-} from '@tiramon/du-market-api';
+} from '@xairo/du-market-api';
 import {
   ApiModule as MapApiModule,
   Configuration as MapConfiguration,
-} from '@tiramon/du-map-api';
+} from '@xairo/du-map-api';
 import { AuthGuard } from './core/guard/auth.guard';
 
 import localeDe from '@angular/common/locales/de';

@@ -1,19 +1,35 @@
 .dialog {
-    position: absolute;
-    z-index: 20;
-    background-color: rgb(27,40,48);
-    padding: 5px;
-    left: 70px;
-    top: 150px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 20;
+  background-color: rgb(27, 40, 48);
+  padding: 5px;
+  left: 70px;
+  top: 150px;
 }
 
 .tileHeader {
-    background-color:rgb(13, 24, 28); 
-    color: white;
-    font-weight: bold;
+  background-color: rgb(13, 24, 28);
+  color: white;
+  font-weight: bold;
 }
 
-.leftColumn {
-    background-color: rgb(13,24,28);
-     color: rgb(76,112,124);
+.leftColumn,
+.rightColumn {
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgb(13, 24, 28);
+  color: rgb(76, 112, 124);
+}
+.ore-list {
+  text-align: right;
+}
+
+.ore-item {
+  text-align: right;
+}
+
+.ore-input {
+  width: 40px
 }
