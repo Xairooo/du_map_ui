@@ -1,5 +1,4 @@
 name: Deploy
-
 on:
   push:
 
@@ -33,6 +32,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Build
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        DUMMY_CLIENT_SECRET: ${{ secrets.DUMMY_CLIENT_SECRET }}
       run: |
         npm install
         npm run build-prod
