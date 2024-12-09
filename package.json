@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod": "ng build --configuration production --output-path ./out --base-href /du_map_ui/"
+    "build-prod": "ng build --configuration production --output-path ./out --base-href /du_map_ui/",
+    "deploy": "ng deploy --no-silent"
   },
   "private": true,
   "dependencies": {
