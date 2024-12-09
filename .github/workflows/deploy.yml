@@ -37,7 +37,8 @@ jobs:
         DUMMY_CLIENT_SECRET: ${{ secrets.DUMMY_CLIENT_SECRET }}
       run: |
         npm install
-        npm run build-prod
+        ng deploy
+#        npm run build-prod
 
     - name: Setup Pages
       uses: actions/configure-pages@v3
