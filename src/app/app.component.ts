@@ -137,8 +137,8 @@ export class AppComponent implements OnInit {
     // URL of the SPA to redirect the user to after login
     config.redirectUri = window.location.origin + '/';
     // The SPA's id. The SPA is registerd with this id at the auth-server
-    config.clientId = '780864362234511400';
-    config.dummyClientSecret = 'Tk1Ni6x6wm239aN2juHh3o90glPusCqB';
+    config.clientId = '1268876150235730025';
+    config.dummyClientSecret = 'BneJu8bVbpsDGX63xuBWNcOb6KdIYpWr';
     config.responseType = 'code';
 
     // set the scope for the permissions the client should request
