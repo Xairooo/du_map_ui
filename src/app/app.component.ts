@@ -135,10 +135,10 @@ export class AppComponent implements OnInit {
     config.tokenEndpoint = 'https://discord.com/api/oauth2/token';
 
     // URL of the SPA to redirect the user to after login
-    config.redirectUri = window.location.origin + '/';
+    config.redirectUri = window.location.origin + '/du_map_ui/';
     // The SPA's id. The SPA is registerd with this id at the auth-server
     config.clientId = '1268876150235730025';
-    config.dummyClientSecret = 'BneJu8bVbpsDGX63xuBWNcOb6KdIYpWr';
+    config.dummyClientSecret = 'Fr-afZ1yOJiyMnDMb_gp21hIJw0dUtxm';
     config.responseType = 'code';
 
     // set the scope for the permissions the client should request
